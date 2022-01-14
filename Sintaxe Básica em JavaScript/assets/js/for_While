@@ -1,0 +1,49 @@
+let array = ['valor1', 'valor2', 'valor3', 'valor4'];
+
+let object = { propriedade1: 'valor1', propriedade2: 'valor2', propriedade3: 'valor3'}
+
+//for - Executa uma instrução até que ela seja falsa.
+
+for(let indice=0; indice<array.length; indice++){
+    console.log(indice);
+}
+console.log('-------------------------------------------');
+
+// for/in - Executa uma repetição a partir de uma propriedade
+for(let i in array) {
+    console.log(i);
+}
+console.log('-------------------------------------------');
+
+// com object
+for (i in object) {
+    console.log(i);
+}
+console.log('-------------------------------------------');
+
+// for/of - Executa repetição a partir de valor
+
+for (i of array) {
+    console.log(i);
+}
+console.log('-------------------------------------------');
+
+// com object - NÃO DA PRA USAR
+
+/* for (i of object){
+    console.log(i);
+} */
+
+// While
+var a = 0;
+while (a < 10) {
+    console.log(a);
+    a++;
+}
+console.log('-------------------------------------------');
+// Do While
+var b = 0;
+do {
+    b++;
+    console.log(b);    
+} while(b<10);
