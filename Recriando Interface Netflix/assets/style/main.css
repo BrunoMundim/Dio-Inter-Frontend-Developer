@@ -1,0 +1,138 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #090909;
+    --cinzaFundo: #141414;
+    --cinzaNav: #afafae;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cinzaFundo);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: var(--preta);
+    width: 100%;    
+}
+
+header .container{     
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo-netflix{
+    height: 25px;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    margin-right: 50px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-right: 12px;
+}
+
+header nav a:hover{
+    color:var(--vermelho)
+}
+
+/* Filme principal */
+
+.container{
+    margin-left: 3%;
+}
+
+.logo-filme-principal{
+    height: 70px;
+}
+
+.titulo {
+    padding-bottom: 20px;
+}
+
+.descricao{
+    width: 400px;
+    padding-top: 20px;
+    margin-bottom: 60px;
+
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-principal{
+    background: linear-gradient(rgba(0, 0, 0, .60),rgba(0, 0, 0, .30)100%) ,url('/assets/img/the-witcher-1.jpg');
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-bottom: 60px;
+}
+
+.botao{
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 25px;
+
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.botao-assistir{
+    background-color: rgba(255, 255, 255, .95);
+    color: black;
+}
+.botao-assistir:hover{
+    background-color: rgba(255, 255, 255, .70);
+}
+
+.botao-mais-informacoes{
+    background-color: rgba(78, 78, 78, .50);
+    color: white;
+
+    margin-left: 10px;
+}
+.botao-mais-informacoes:hover{
+    background-color: rgba(78, 78, 78, .25) 
+}
+
+/* Carrossel */
+
+.box-filme{
+    height: 40%;
+    width: 40%;
+    display: block;
+}
+
+.minha-lista{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.categoria{
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
